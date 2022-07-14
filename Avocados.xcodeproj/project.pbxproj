@@ -15,6 +15,9 @@
 		FAB6D8B7287E107C00098E1E /* RipeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6D8B6287E107C00098E1E /* RipeningView.swift */; };
 		FAB6D8B9287E109200098E1E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6D8B8287E109200098E1E /* SettingsView.swift */; };
 		FAB6D8BB287E10A600098E1E /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6D8BA287E10A600098E1E /* AppView.swift */; };
+		FABE5915288097150092BCDE /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE5914288097150092BCDE /* HeaderView.swift */; };
+		FABE591728809CC70092BCDE /* HeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE591628809CC70092BCDE /* HeaderModel.swift */; };
+		FABE591928809D100092BCDE /* HeaderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE591828809D100092BCDE /* HeaderData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		FAB6D8B6287E107C00098E1E /* RipeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningView.swift; sourceTree = "<group>"; };
 		FAB6D8B8287E109200098E1E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		FAB6D8BA287E10A600098E1E /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		FABE5914288097150092BCDE /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		FABE591628809CC70092BCDE /* HeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderModel.swift; sourceTree = "<group>"; };
+		FABE591828809D100092BCDE /* HeaderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 		FAB6D8B1287E101E00098E1E /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				FABE591828809D100092BCDE /* HeaderData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -89,6 +96,7 @@
 		FAB6D8B2287E102600098E1E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FABE591628809CC70092BCDE /* HeaderModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,6 +109,7 @@
 				FA546EEF287E06FD00FF14D9 /* RecipesView.swift */,
 				FAB6D8B6287E107C00098E1E /* RipeningView.swift */,
 				FAB6D8B8287E109200098E1E /* SettingsView.swift */,
+				FABE5914288097150092BCDE /* HeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +190,9 @@
 				FAB6D8B7287E107C00098E1E /* RipeningView.swift in Sources */,
 				FA546EEE287E06FD00FF14D9 /* AvocadosApp.swift in Sources */,
 				FAB6D8B5287E106100098E1E /* AvocadosView.swift in Sources */,
+				FABE591728809CC70092BCDE /* HeaderModel.swift in Sources */,
+				FABE591928809D100092BCDE /* HeaderData.swift in Sources */,
+				FABE5915288097150092BCDE /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
