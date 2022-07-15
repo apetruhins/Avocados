@@ -18,6 +18,7 @@
 		FABE5915288097150092BCDE /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE5914288097150092BCDE /* HeaderView.swift */; };
 		FABE591728809CC70092BCDE /* HeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE591628809CC70092BCDE /* HeaderModel.swift */; };
 		FABE591928809D100092BCDE /* HeaderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE591828809D100092BCDE /* HeaderData.swift */; };
+		FAC1179A2881D9AA009E3524 /* DishesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC117992881D9AA009E3524 /* DishesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		FABE5914288097150092BCDE /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		FABE591628809CC70092BCDE /* HeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderModel.swift; sourceTree = "<group>"; };
 		FABE591828809D100092BCDE /* HeaderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderData.swift; sourceTree = "<group>"; };
+		FAC117992881D9AA009E3524 /* DishesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				FAB6D8B6287E107C00098E1E /* RipeningView.swift */,
 				FAB6D8B8287E109200098E1E /* SettingsView.swift */,
 				FABE5914288097150092BCDE /* HeaderView.swift */,
+				FAC117992881D9AA009E3524 /* DishesView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				FAB6D8B5287E106100098E1E /* AvocadosView.swift in Sources */,
 				FABE591728809CC70092BCDE /* HeaderModel.swift in Sources */,
 				FABE591928809D100092BCDE /* HeaderData.swift in Sources */,
+				FAC1179A2881D9AA009E3524 /* DishesView.swift in Sources */,
 				FABE5915288097150092BCDE /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
