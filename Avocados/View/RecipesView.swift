@@ -37,6 +37,22 @@ struct RecipesView: View {
                 DishesView()
                     .frame(maxWidth: 640)
                 
+                // MARK: - Facts
+                Text("Avocado Facts")
+                    .fontWeight(.bold)
+                    .modifier(TitleModifier())
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(alignment: .top, spacing: 60) {
+                        ForEach(factData) { fact in
+                            FactView(fact: fact)
+                        } //: ForEach
+                    } //: HSTack
+                    .padding(.vertical)
+                    .padding(.leading, 60)
+                    .padding(.trailing, 20)
+                } //: ScrollView
+                
                 // MARK: - Footer
                 
                 VStack(alignment: .center, spacing: 20) {
