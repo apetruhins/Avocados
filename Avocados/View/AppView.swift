@@ -15,25 +15,25 @@ struct AppView: View {
     
     var body: some View {
         TabView {
-            AvocadosView()
+            AvocadosTabItemView()
                 .tabItem {
                     Image("tabicon-branch")
                     Text("Avocados")
                 }
             
-            RecipesView()
+            RecipesTabItemView()
                 .tabItem {
                     Image("tabicon-book")
                     Text("Recipes")
                 }
             
-            RipeningView()
+            RipeningTabItemView()
                 .tabItem {
                     Image("tabicon-avocado")
                     Text("Ripening")
                 }
             
-            SettingsView()
+            SettingsTabItemView()
                 .tabItem {
                     Image("tabicon-settings")
                     Text("Settings")

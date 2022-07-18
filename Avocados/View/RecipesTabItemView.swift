@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RecipesView: View {
+struct RecipesTabItemView: View {
     
     // MARK: - Properties
     
@@ -104,8 +104,8 @@ struct TitleModifier: ViewModifier {
 
 // MARK: - Preview
 
-struct RecipesView_Previews: PreviewProvider {
+struct RecipesTabItemView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipesView()
+        RecipesTabItemView()
     }
 }

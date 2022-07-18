@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AvocadosView: View {
+struct AvocadosTabItemView: View {
     
     // MARK: - Properties
     
@@ -26,7 +26,7 @@ struct AvocadosView: View {
                 .shadow(color: Color("ColorBlackTransparentDark"), radius: 12, x: 0, y: 8)
                 .scaleEffect(self.pulsateAnimation ? 1 : 0.9)
                 .opacity(self.pulsateAnimation ? 1 : 0.9)
-                .animation(.easeInOut(duration: 1.5).repeatForever(), value: UUID())
+                .animation(.easeInOut(duration: 1.5).repeatForever(), value: self.pulsateAnimation)
             
             VStack {
                 Text("Avocados".uppercased())
@@ -61,10 +61,9 @@ struct AvocadosView: View {
 
 // MARK: - Preview
 
-struct AvocadosView_Previews: PreviewProvider {
+struct AvocadosTabItemView_Previews: PreviewProvider {
     static var previews: some View {
-        AvocadosView()
-            
+        AvocadosTabItemView()
             //.previewDevice("iPhone 13 Pro")
             //.environment(\.colorScheme, .dark)
     }

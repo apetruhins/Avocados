@@ -99,12 +99,12 @@ struct RecipeDetailView: View {
                             .font(.title)
                             .foregroundColor(.white)
                             .shadow(radius: 4)
-                            .opacity(pulsate ? 1 : 0.6)
-                            .scaleEffect(pulsate ? 1.2 : 0.8, anchor: .center)
+                            .opacity(self.pulsate ? 1 : 0.6)
+                            .scaleEffect(self.pulsate ? 1.2 : 0.8, anchor: .center)
                             .animation(
                                 .easeInOut(duration: 1.5)
                                     .repeatForever(autoreverses: true)
-                                , value: UUID()
+                                , value: self.pulsate
                             )
                     })
                     .padding(.trailing, 20)
@@ -114,8 +114,8 @@ struct RecipeDetailView: View {
                 } //: Vstack
             } //: HStack
         ) //: Overlay
-        .onAppear() {
-            pulsate.toggle()
+        .onAppear {
+            self.pulsate.toggle()
         }
     } //: body
 } //: struct

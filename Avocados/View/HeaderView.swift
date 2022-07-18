@@ -57,10 +57,10 @@ struct HeaderView: View {
                 .background(Color("ColorBlackTransparentLight"))
             } //: HStack
             .frame(width: 285, height: 105, alignment: .center)
-            .offset(x: -66, y: showHeadline ? 75 : 220)
-            .animation(slideInAnimation, value: UUID())
+            .offset(x: -66, y: self.showHeadline ? 75 : 220)
+            .animation(slideInAnimation, value: self.showHeadline)
             .onAppear {
-                self.showHeadline.toggle()
+                self.showHeadline = true
             }
             
         } //: ZStack
