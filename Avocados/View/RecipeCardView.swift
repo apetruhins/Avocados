@@ -12,6 +12,9 @@ struct RecipeCardView: View {
     // MARK: - Properties
     
     var recipe: Recipe
+    var hapticImpact = UIImpactFeedbackGenerator(style: .heavy)
+    
+    @State private var showModal: Bool = false
     
     // MARK: - Body
     
@@ -55,33 +58,10 @@ struct RecipeCardView: View {
                     .italic()
                 
                 // Rating
-                HStack(alignment: .center, spacing: 5) {
-                    ForEach(1...(recipe.rating), id: \.self) { _ in
-                        Image(systemName: "star.fill")
-                                .font(.body)
-                        .foregroundColor(.yellow)
-                    }
-                }
+                RecipeRatingView(recipe: recipe)
                 
                 // Coking
-                HStack(alignment: .center, spacing: 12) {
-                    HStack(alignment: .center, spacing: 2) {
-                        Image(systemName: "person.2")
-                        Text("Serves: \(recipe.serves)")
-                    }
-                    
-                    HStack(alignment: .center, spacing: 2) {
-                        Image(systemName: "clock")
-                        Text("Prep: \(recipe.preparation)")
-                    }
-                    
-                    HStack(alignment: .center, spacing: 2) {
-                        Image(systemName: "flame")
-                        Text("Cooking: \(recipe.cooking)")
-                    }
-                }
-                .font(.footnote)
-                .foregroundColor(.gray)
+                RecipeCookingView(recipe: recipe)
                 
             } //: VStack
             .padding()
@@ -91,6 +71,13 @@ struct RecipeCardView: View {
         .background(Color.white)
         .cornerRadius(12)
         .shadow(color: Color("ColorBlackTransparentLight"), radius: 8, x: 0, y: 0)
+        .onTapGesture {
+            hapticImpact.impactOccurred()
+            showModal = true
+        }
+        .sheet(isPresented: self.$showModal) {
+            RecipeDetailView(recipe: recipe)
+        }
     }
 }
 
